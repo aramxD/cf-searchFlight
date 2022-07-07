@@ -1,17 +1,20 @@
 import React from 'react'
-import './App.css'
+import styled from "styled-components";
 import Footer from './components/Footer'
 import Header from './components/header'
 import Main from './components/Main'
+import SearchForm from './elements/SearchForm';
 
-function App() {
+
+
+function App({className}) {
    
 
   return (
-    <div className="App">
+    <div className={className}>
        <Header/>
        <Main>
-        <p>lkjahsdfadsf</p>
+        <SearchForm/>
 
 
        </Main>
@@ -20,4 +23,9 @@ function App() {
   )
 }
 
-export default App
+export default styled(App)`
+ 
+  text-align: center;
+
+
+`

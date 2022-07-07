@@ -18,5 +18,7 @@ export default styled(Main)`
  height:700px;
  background-color:rgba(235,235,235)
 
-
+h1{
+    margin:0;
+}
 `;
