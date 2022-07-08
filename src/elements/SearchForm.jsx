@@ -1,99 +1,100 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const SearchForm = ({ className }) => {
+    const [formValue, setFormValue] = useState('')
   return (
     <>
       <form action="">
-        <div class="inputs-container">
-          <div class="input-container">
+        <div className="inputs-container">
+          <div className="input-container">
             <input
               type="text"
-              class="text-input"
+              className="text-input"
               name="originLocationCode"
               id="originLocationCode"
               placeholder=""
               required
             />
-            <label class="label" for="originLocationCode">
+            <label className="label" htmlFor="originLocationCode">
               Origen
             </label>
           </div>
-          <div class="input-container">
+          <div className="input-container">
             <input
               type="text"
-              class="text-input"
+              className="text-input"
               name="destinationLocationCode"
               id="destinationLocationCode"
               placeholder=""
               required
             />
-            <label class="label" for="destinationLocationCode">
+            <label className="label" htmlFor="destinationLocationCode">
               Destino
             </label>
           </div>
-          <div class="input-container">
+          <div className="input-container">
             <input
               type="date"
-              class="text-input"
+              className="text-input"
               name="departureDate"
               id="departureDate"
               placeholder=""
               required
             />
-            <label class="label" for="departureDate">
+            <label className="label" htmlFor="departureDate">
               Fecha de Salida
             </label>
           </div>
-          <div class="input-container">
+          <div className="input-container">
             <input
               type="date"
-              class="text-input"
+              className="text-input"
               name="returnDate"
               id="returnDate"
               placeholder=""
               required
             />
-            <label class="label" for="returnDate">
+            <label className="label" htmlFor="returnDate">
               Fecha de Regreso
             </label>
           </div>
-          <div class="input-container">
+          <div className="input-container">
             <input
               type="text"
-              class="text-input"
+              className="text-input"
               name="adults"
               id="adults"
               placeholder=""
               required
             />
-            <label class="label" for="adults">
+            <label className="label" htmlFor="adults">
               Adultos
             </label>
           </div>
-          <div class="input-container">
+          <div className="input-container">
             <input
               type="text"
-              class="text-input"
+              className="text-input"
               name="children"
               id="children"
               placeholder=""
               required
             />
-            <label class="label" for="children">
+            <label className="label" htmlFor="children">
               Ninos
             </label>
           </div>
-          <div class="input-container">
+          <div className="input-container">
             <input
               type="text"
-              class="text-input"
+              className="text-input"
               name="infants"
               id="infants"
               placeholder=""
               required
             />
-            <label class="label" for="infants">
+            <label className="label" htmlFor="infants">
               Infantes
             </label>
           </div>

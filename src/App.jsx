@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Footer from './components/Footer'
 import Header from './components/header'
 import Main from './components/Main'
+import FlightList from './elements/FlightList';
 import SearchForm from './elements/SearchForm';
 
 
@@ -16,9 +17,9 @@ function App({className}) {
        <Main>
         <SearchForm/>
 
-
+        <FlightList/>
        </Main>
-       <Footer/>
+       {/* <Footer/> */}
     </div>
   )
 }
