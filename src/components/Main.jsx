@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { ButtonPrimary, Title } from "../elements/StyledElements";
  
 
 const Main = ({className, children}) =>{
@@ -7,7 +8,8 @@ const Main = ({className, children}) =>{
     return(
      
     <section className={className}>
-        <h1>Soy la seccion Main xD</h1>
+        <Title>Soy la seccion Main xD</Title>
+        <ButtonPrimary>sdfsdf</ButtonPrimary>
          {children}
     </section>
      

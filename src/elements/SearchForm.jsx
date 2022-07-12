@@ -1,24 +1,35 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Label } from "./StyledElements";
 
 const SearchForm = ({ className }) => {
-    const [formValue, setFormValue] = useState('')
+  const [formValue, setFormValue] = useState("");
+
   return (
     <>
-       <form action="">
+      <form action="">
         <div class="flightFormCity">
-          <label for="departure">From</label>
+          <Label for="departure">From</Label>
           <input type="text" placeholder="CDMX" />
         </div>
         <div class="flightFormCity">
-          <label for="departure">To</label>
+          <Label for="departure">To</Label>
           <input type="text" placeholder="CDMX" />
         </div>
 
         <div class="flightFormPeople">
           <div class="optionsAdult">
-            <label for="adults">Adults:</label>
+            <Label for="adults">Adults:</Label>
             <select id="adults" name="adults">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="optionsChildren">
+            <Label for="children">Children:</Label>
+            <select id="children" name="children">
               <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -26,19 +37,10 @@ const SearchForm = ({ className }) => {
               <option value="4">4</option>
             </select>
           </div>
-          <div class="optionsAdult">
-            <label for="adults">Adults:</label>
-            <select id="adults" name="adults">
+          <div class="optionsInfants">
+            <Label for="infants">Infants:</Label>
+            <select id="infants" name="infants">
               <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <div class="optionsAdult">
-            <label for="adults">Adults:</label>
-            <select id="adults" name="adults">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -57,7 +59,7 @@ const SearchForm = ({ className }) => {
             <input type="date" />
           </div>
         </div>
-    </form>
+      </form>
     </>
   );
 };
