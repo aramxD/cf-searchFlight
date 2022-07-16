@@ -6,7 +6,7 @@ import Main from './components/Main'
 import FlightList from './elements/FlightList';
 import SearchForm from './elements/SearchForm';
 
-
+let github_token 
 
 function App({className}) {
    
@@ -14,6 +14,10 @@ function App({className}) {
   return (
     <div className={className}>
        <Header/>
+       {!!github_token&&
+       <h1>{github_token}</h1>
+       }
+       
        <Main>
         <SearchForm/>
 
